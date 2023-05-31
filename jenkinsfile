@@ -6,7 +6,7 @@ maven 'M2_HOME'
 }
  environment { 
 
-        registry = "hazem12345/tp-achat-project" 
+        registry = "mohamed-amine-melliti/devops-credit" 
 
         registryCredential = 'dockerHub' 
 
@@ -17,8 +17,8 @@ maven 'M2_HOME'
     stages {
         ma('Checkout GIT  ') {
             steps {
-                git branch:'master',
-                url:'https://github.com/waelbannani22/tpAchatProject'
+                git branch:'main',
+                url:'https://github.com/mohamed-amine-melliti/devops-credit'
                 
                 script{
                                     Date date = new Date()
