@@ -10,12 +10,12 @@ maven 'M2_HOME'
 
         registryCredential = 'dockerHub' 
 
-        dockerImage = '' 
+        dockerImage = 'https://hub.docker.com/r/minov98/tpachatproject-app' 
 
     }
     
     stages {
-        ma('Checkout GIT  ') {
+        maven('Checkout GIT  ') {
             steps {
                 git branch:'main',
                 url:'https://github.com/mohamed-amine-melliti/devops-credit'
